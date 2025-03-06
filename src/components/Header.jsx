@@ -10,7 +10,7 @@ const Header = () => {
       <div className="bg-[#C4ACB4AA] w-full">
         <header className="container py-5 relative z-10 w-full flex items-center justify-between px-6 lg:px-12 pt-6">
           <Link href="/">
-            <h1 className="text-3xl lg:text-4xl font-bold text-black">
+            <h1 className="text-3xl lg:text-4xl font-bold text-[#8A2823]">
               Qwik <span className="text-white">Catering</span>
             </h1>
           </Link>

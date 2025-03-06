@@ -26,7 +26,7 @@ const HeroSection = () => {
             Specializing in weddings, corporate events, and private gatherings,
             we create memorable dining experiences tailored to your vision.
           </p>
-          <Button className="px-6 py-3 mt-6 text-lg font-semibold text-white bg-[#8A2823] rounded-lg hover:bg-[#541410]">
+          <Button className="px-6 py-3 mt-6 md:hidden text-lg font-semibold text-white bg-[#8A2823] rounded-lg hover:bg-[#541410]">
             Book a Consultation
           </Button>
         </div>
