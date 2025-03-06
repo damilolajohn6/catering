@@ -17,9 +17,9 @@ const MobileNav = () => {
   const pathname = usePathname();
   return (
     <Sheet>
-      <SheetTrigger className="flex justify-center items-center">
-        <Button>
-          <CiMenuFries className="text-[32px] text-white" />
+      <SheetTrigger className="flex justify-center items-center ">
+        <Button className="bg-[#8A2823] hover:bg-[#481513]">
+          <CiMenuFries className="text-[52px] text-white" />
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="flex flex-col bg-white p-6">
@@ -45,7 +45,7 @@ const MobileNav = () => {
             </Link>
           ))}
           <Link href="/contact">
-            <Button className="bg-[#8A2823] text-white font-bold py-2 px-4 rounded-lg">
+            <Button className="bg-[#8A2823] hover:bg-[#481513] text-white font-bold py-2 px-4 rounded-lg">
               Contact
             </Button>
           </Link>

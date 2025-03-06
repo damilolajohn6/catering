@@ -25,7 +25,7 @@ const Header = () => {
 
           <div className="z-10 xl:flex hidden ">
             <Link href="/contact">
-              <Button className="bg-[#8A2823] text-white font-bold py-2 px-4 rounded-lg">
+              <Button className="bg-[#8A2823] hover:bg-[#481513] text-white font-bold py-2 px-4 rounded-lg">
                 Contact
               </Button>
             </Link>

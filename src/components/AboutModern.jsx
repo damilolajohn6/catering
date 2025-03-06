@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 export default function TraditionalModern() {
   return (
@@ -25,9 +26,9 @@ export default function TraditionalModern() {
             "Behind Every Dish Lies a Story of Passion, Flavor, and
             Craftsmanship."
           </p>
-          <button className="mt-6 bg-[#752626] text-white px-6 py-3 rounded-lg font-semibold">
+          <Button className="mt-6 bg-[#752626] hover:bg-[#481513] text-white px-6 py-3 rounded-lg font-semibold">
             Book for consultation
-          </button>
+          </Button>
         </div>
 
         {/* Right Image */}

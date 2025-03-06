@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 const ServiceHero = () => {
   return (
@@ -24,9 +25,9 @@ const ServiceHero = () => {
             "Savor the flavors of perfection with customized menus and
             impeccable service."
           </p>
-          <button className="mt-6 px-6 py-3 bg-red-700 text-white font-semibold rounded-md hover:bg-red-800 transition">
+          <Button className="mt-6 px-6 py-3 bg-pink-900 text-white font-semibold rounded-md hover:bg-[#481513] transition">
             Request a Quote
-          </button>
+          </Button>
         </div>
       </div>
     </section>

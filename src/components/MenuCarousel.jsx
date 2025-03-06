@@ -91,7 +91,7 @@ const MenuCarousel = () => {
           </Button>
         </div>
         <div className="text-center mt-8">
-          <Button className="bg-[#752626] text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-[#5a1c1c] transition">
+          <Button className="bg-[#752626]  text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-[#5a1c1c] transition">
             Get A Quote
           </Button>
         </div>

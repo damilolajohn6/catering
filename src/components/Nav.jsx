@@ -20,8 +20,8 @@ const Nav = () => {
           href={link.href}
           className={`capitalize font-bold transition-all text-white ${
             link.href === pathname
-              ? "text-white border-b-2 border-pink-100"
-              : "hover:text-pink-400"
+              ? "text-[#481513] border-b-2 border-[#481513]"
+              : "hover:text-[#381413]"
           }`}
         >
           {link.label}

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Button } from "./ui/button";
 
 const events = [
   {
@@ -53,26 +54,29 @@ const CateringCarousel = () => {
     <section className="py-12 px-4 bg-white container">
       <div className="container mx-auto">
         <div className="w-full lg:w-1/3">
-          <h2 className="text-xl font-bold text-red-800">
+          <h2 className="text-xl font-bold text-pink-900">
             Our Catering Philosophy: Crafted with Care, Inspired by You
           </h2>
           <p className="mt-4 text-gray-700">
-            At Qwik Catering, our philosophy is simple: every dish is a blend of quality, creativity, and a commitment to your satisfaction.
+            At Qwik Catering, our philosophy is simple: every dish is a blend of
+            quality, creativity, and a commitment to your satisfaction.
           </p>
         </div>
       </div>
 
       <div className="relative max-w-6xl mx-auto mt-8 overflow-hidden">
-        <button
+        <Button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 -translate-y-1/2 p-3 bg-red-700 text-white rounded-full shadow-md hover:bg-red-800 z-10"
+          className="absolute left-0 top-1/2 -translate-y-1/2 p-3 bg-pink-900 text-white rounded-full shadow-md hover:bg-[#481513] z-10"
         >
           <FaChevronLeft />
-        </button>
+        </Button>
 
         <div
           className="flex gap-4 transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * (100 / visibleSlides)}%)` }}
+          style={{
+            transform: `translateX(-${currentIndex * (100 / visibleSlides)}%)`,
+          }}
         >
           {events.map((event, index) => (
             <div
@@ -88,24 +92,26 @@ const CateringCarousel = () => {
                   className="rounded-md"
                 />
               </div>
-              <h3 className="text-lg font-bold text-red-800 mt-4">{event.title}</h3>
+              <h3 className="text-lg font-bold text-red-800 mt-4">
+                {event.title}
+              </h3>
               <p className="text-gray-600 mt-2 text-sm">{event.description}</p>
             </div>
           ))}
         </div>
 
-        <button
+        <Button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 -translate-y-1/2 p-3 bg-red-700 text-white rounded-full shadow-md hover:bg-red-800 z-10"
+          className="absolute right-0 top-1/2 -translate-y-1/2 p-3 bg-pink-900 text-white rounded-full shadow-md hover:bg-[#481513] z-10"
         >
           <FaChevronRight />
-        </button>
+        </Button>
       </div>
 
       <div className="mt-6 text-center flex justify-end">
-        <button className="px-6 py-3 bg-red-700 text-white font-semibold rounded-md hover:bg-red-800 transition">
+        <Button className="px-6 py-3 bg-pink-900 text-white font-semibold rounded-md hover:bg-[#481513] transition">
           See Our Menu
-        </button>
+        </Button>
       </div>
     </section>
   );

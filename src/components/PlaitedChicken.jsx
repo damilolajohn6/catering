@@ -2,6 +2,7 @@
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
+import { Button } from "./ui/button";
 
 const specials = [
   {
@@ -70,7 +71,7 @@ const PlaitedChicken = () => {
               </div>
             </div>
           </div>
-  
+
           {/* Scrollable Specials Section */}
           <div className="w-full md:w-2/3 relative">
             <div
@@ -100,22 +101,22 @@ const PlaitedChicken = () => {
                 </div>
               ))}
             </div>
-  
+
             {/* Navigation Buttons - Hidden on Larger Screens */}
             {showButtons && (
               <div className="">
-                <button
+                <Button
                   onClick={() => scroll("left")}
-                  className="absolute top-1/2 left-[-40px] transform -translate-y-1/2 bg-[#752626] text-white p-2 rounded-full"
+                  className="absolute top-1/2 left-[-40px] transform -translate-y-1/2 bg-[#752626] hover:bg-[#481513] text-white p-2 rounded-full"
                 >
                   <FaChevronLeft />
-                </button>
-                <button
+                </Button>
+                <Button
                   onClick={() => scroll("right")}
-                  className="absolute top-1/2 right-[-40px] transform -translate-y-1/2 bg-[#752626] text-white p-2 rounded-full"
+                  className="absolute top-1/2 right-[-40px] transform -translate-y-1/2 bg-[#752626] hover:bg-[#481513] text-white p-2 rounded-full"
                 >
                   <FaChevronRight />
-                </button>
+                </Button>
               </div>
             )}
           </div>
